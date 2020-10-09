@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>NoteApp</h1>
+
+      <form id="note-form">
+        <label for="entNote" id="">Enter a Note:</label>
+        <input
+          type="text"
+          name="entNote"
+          id="note-input"
+          placeholder="Enter a Note"
+        />
+        <select id="note-priority">
+            <option value="type" selected disabled hidden>Type</option>
+          <option value="urgent">Urgent</option>
+          <option value="important">Important</option>
+          <option value="regular">Regular</option>
+        </select>
+        <input type="submit" value="ADD"  class="btn add-bn"/>
+      </form>
+
+      <button id="clear-all" class="btn clr-btn">Clear All </button>
+      <button id="restore" class="btn restore-btn">Restore </button>
+<div id="notes-container">
+    <p class="note important">Buy Some Milk <button class="remove-btn">X</button> </p>
+    <p class="note urgent"> Do Home Work <button class="remove-btn">X</button> </p>
+    <p class="note regular">Watch Tv <button class="remove-btn">X</button></p>
+</div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
